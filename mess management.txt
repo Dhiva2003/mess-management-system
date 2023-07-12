@@ -1,0 +1,65 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+int main()
+{
+char choice;
+int x,gulabjamun=7,dosa=10,meals=50,poori=20,chappathi=15,subtotal1=0,subtotal2=0,subtotal3=0,subtotal4=0,subtotal5=0,total;
+printf("WELCOME TO FRIENDS MESS\n");
+printf("World's Pure Mess\n");
+printf("Enter choice\n");
+printf("[1] Gulab jamun\n");
+printf("[2] for Dosa\n");
+printf("[3] for Chapathi\n");
+printf("[4] for Poori\n");
+printf("[5] for Meals\n");
+printf("[q] to quit \n");
+scanf("%c",&choice); 
+if((choice=='q')||(choice=='Q'))
+exit(0);
+if(choice=='1')
+{
+printf("ordered: Gulab Jamun one piece=7 rupees\n");
+printf("how many?\n");
+scanf("%d",&x);
+subtotal1=gulabjamun*x;
+printf("sub total:Gulab Jamun=%d",subtotal1);
+getch();
+}
+if(choice=='2')
+{
+printf("ordered: Dosa=10 Rupees\n");
+printf("how many?\n");
+scanf("%d",&x);
+subtotal2=dosa*x;
+printf("sub total:dosa=%d",subtotal2);
+getch();
+}
+if(choice=='3')
+{
+printf("ordered:Poori\n");
+printf("how many?\n");
+scanf("%d",&x);
+subtotal3=poori*x;
+printf("sub total:poori=%d",subtotal3);
+getch();
+}
+if(choice=='4')
+{
+printf("ordered:Chapathi\n");
+printf("how many?\n");
+scanf("%d",&x);
+subtotal4=chappathi*x;
+printf("sub total: Chapathi =%d",subtotal4);
+getch();
+}
+if(choice=='5')
+{
+printf("shopped:Full Meals\n");
+printf("how many meals you want?\n");
+scanf("%d",&x);
+subtotal5=meals*x;
+printf("sub total:Full Meals=%d",subtotal5);
+getch();
+}
+}
